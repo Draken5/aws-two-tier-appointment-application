@@ -14,6 +14,11 @@ This project allowed me to practice identifying issues, investigating possible c
 
 ## Architecture
 
+This project uses a two-tier AWS LightSail architecture consisting of a Flask application layer and a MySQL database layer. The Flask application runs on an Ubuntu Linux server and communicates with the MySQL database to store and retrieve appointment information.
+
+The architecture simulates a production-style environment where an application depends on backend database services. The project focused on configuring the application stack, establishing database connectivity, and troubleshooting issues across the application, operating system, and database layers.
+
+
 ## AWS Services Used
 
 ## Application Components
