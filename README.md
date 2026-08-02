@@ -143,6 +143,13 @@ The API successfully returned appointment data in JSON format:
 
 ## Security Considerations
 
+Security considerations were applied throughout the deployment process by separating the application and database environments into two different AWS LightSail instances. This helped simulate a production-style architecture where application services and database services are managed independently.
+
+Database access was configured to support communication between the Flask application server and MySQL database server. I created and configured database permissions for the `appointment_app` database and verified connectivity between the application and database layers.
+
+After completing testing and validating the application functionality, I terminated the LightSail instances to prevent unnecessary resource usage and ongoing costs.
+
+
 ## Lessons Learned
 
 ## Future Improvements
