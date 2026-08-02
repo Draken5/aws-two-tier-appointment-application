@@ -31,6 +31,21 @@ The architecture simulates a production-style environment where an application d
 
 ## Application Components
 
+### Application Server
+
+The application layer was built using Flask and deployed on an Ubuntu Linux server hosted through AWS LightSail. The Flask application handled application logic and provided API endpoints for retrieving appointment information.
+
+The Flask service was configured to run on all network interfaces and was validated through endpoint testing API responses using curl commands.
+
+### Database Server
+
+The database layer consisted of a separate MySQL server environment hosted through AWS LightSail. The database stored appointment information and provided the backend data required by the Flask application.
+
+### Application and Database Communication
+
+The Flask application communicated with the MySQL database to retrieve and process appointment data. Testing and troubleshooting were performed to validate communication between the application and database layers.
+
+
 ## Deployment Process
 
 ## Troubleshooting Challenges
