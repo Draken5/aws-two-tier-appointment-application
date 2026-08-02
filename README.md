@@ -160,3 +160,8 @@ This project also showed me how important documentation is when troubleshooting 
 
 
 ## Future Improvements
+
+If I continued developing this project, I would implement Infrastructure as Code (IaC) to automate the deployment and configuration of the application and database environments. This would allow the infrastructure to be recreated more consistently, reduce manual configuration steps, and improve the speed of deploying and scaling environments.
+
+Adding IaC would also improve the repeatability of the project by allowing infrastructure changes to be tracked, documented, and managed through version control.
+
