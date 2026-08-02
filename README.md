@@ -48,6 +48,21 @@ The Flask application communicated with the MySQL database to retrieve and proce
 
 ## Deployment Process
 
+### Infrastructure Setup
+
+The deployment process began by creating two AWS LightSail instances to support a two-tier application architecture. The first instance served as the application server, while the second instance was configured as the dedicated database server.
+
+Ubuntu Linux was selected as the operating system for both environments. SSH was configured to securely access and manage the server instances. Before deploying application components, I verified system readiness by checking server health and updating required packages.
+
+### Database Server Configuration
+
+The database server was prepared first by installing and configuring MySQL. The database environment was created to store appointment information and support communication with the Flask application running on the application server.
+
+### Application Server Deployment
+
+The Flask application was deployed on the application server and configured to communicate with the MySQL database server. Application testing was performed to validate connectivity between the application and database layers.
+
+
 ## Troubleshooting Challenges
 
 ## Security Considerations
