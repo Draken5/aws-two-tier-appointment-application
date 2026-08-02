@@ -152,4 +152,11 @@ After completing testing and validating the application functionality, I termina
 
 ## Lessons Learned
 
+After completing this project, I learned that revisiting an earlier project and adding new challenges can create more opportunities to learn and deepen my understanding. By expanding my original Lightsail project into a two-tier application environment, I gained experience with application troubleshooting, root cause analysis, Linux administration, database troubleshooting, API testing, incident resolution, cloud infrastructure, documentation, and technical problem solving.
+
+While keeping the project connected to my healthcare background, this experience helped me better understand how technical issues can impact users and the importance of maintaining reliable application services. It reinforced the importance of looking at problems across multiple layers instead of focusing on only one component.
+
+This project also showed me how important documentation is when troubleshooting and supporting technical environments. These experiences will help me continue developing as a cloud engineer and approach future issues with a structured troubleshooting process.
+
+
 ## Future Improvements
