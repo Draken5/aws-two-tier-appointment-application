@@ -7,6 +7,11 @@ This project demonstrates my progression from learning the basics of deploying a
 
 ## Project Goal
 
+The goal of this project was to simulate a real-world production support environment inspired by healthcare workflows, where an application depends on backend database services to function properly. For example, if a healthcare organization experienced an issue where users were unable to access appointment information through the application, I wanted to understand how to troubleshoot the problem across different layers of the application and database environment.
+
+This project allowed me to practice identifying issues, investigating possible causes, and resolving problems across the application, database, operating system, and cloud infrastructure layers.
+
+
 ## Architecture
 
 ## AWS Services Used
