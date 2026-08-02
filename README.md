@@ -65,6 +65,82 @@ The Flask application was deployed on the application server and configured to c
 
 ## Troubleshooting Challenges
 
+### Challenge 1: MySQL Installation Failure Due to Limited Memory Resources
+
+**Issue: **
+During the MySQL deployment process, the installation failed because the database server had limited memory resources available. The Lightsail instance had approximately 414 MB of memory and no configured swap space, causing the MySQL process to be terminated.
+
+**Diagnosis: **
+I reviewed system logs and identified an Out of Memory (OOM) kill event, which indicated that the server did not have enough available memory to complete the MySQL installation.
+
+**Resolution: **
+I configured a 2 GB swap file on the server to provide additional virtual memory, enabled the swap space, and verified the configuration. After increasing available memory resources, I was able to successfully complete the MySQL installation.
+
+**Lesson Learned: **
+This issue reinforced the importance of understanding cloud resource limitations and validating infrastructure requirements before deploying services with higher memory demands.
+
+### Challenge 2: Application Unable to Connect to Database
+
+**Issue: **
+The Flask application was unable to connect to the MySQL database server and returned the error:
+`Can't connect to MySQL server on '172.26.5.254:3306'`
+
+**Diagnosis: **
+I performed troubleshooting steps to identify the cause of the connection failure. I verified the application server configuration, tested database connectivity, and checked the MySQL service status using Linux system management commands.
+
+During investigation, I used the command:
+
+```bash
+sudo systemctl status mysql
+```
+
+to verify the status of the MySQL service.
+
+**Root Cause: **
+The MySQL service had failed because the Linux operating system terminated the process due to an Out of Memory (OOM) event. The AWS LightSail database instance had limited memory resources, causing MySQL to stop running.
+
+**Resolution: **
+I implemented swap storage to provide additional memory resources and verified the available memory using:
+
+```bash
+free -h
+```
+
+After confirming the system resources were available, I restarted the MySQL service and validated database connectivity from the application server.
+
+### Challenge 3: API JSON Serialization Error
+
+**Issue: **
+While testing the Flask API endpoint, the `GET /appointments` request returned an error indicating that the database response could not be converted into JSON format:
+
+```
+Object of type timedelta is not JSON serializable
+```
+
+**Diagnosis: **
+I investigated the application response and identified that MySQL time values were being returned as Python `timedelta` objects. The Flask application was unable to directly convert these values into a JSON-compatible response.
+
+**Resolution: **
+I modified the application logic to convert database time values into JSON-compatible string formats before returning the API response.
+
+**Validation: **
+I tested the updated endpoint using:
+
+```bash
+curl http://localhost:5000/appointments
+```
+
+The API successfully returned appointment data in JSON format:
+
+```json
+[
+  {
+    "customer_name": "John Smith",
+    "appointment_time": "10:00:00"
+  }
+]
+```
+
 ## Security Considerations
 
 ## Lessons Learned
