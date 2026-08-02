@@ -21,6 +21,14 @@ The architecture simulates a production-style environment where an application d
 
 ## AWS Services Used
 
+* **Amazon LightSail** - Used to create and host the application and database server environments.
+* **Ubuntu Linux** - Used as the operating system for managing the application and database infrastructure.
+* **MySQL** - Used as the backend database service to store and retrieve appointment information.
+* **Flask** - Used as the web application framework for the appointment application.
+* **Python** - Used for application development and backend logic.
+* **SSH** - Used to securely connect to and manage the LightSail server environments.
+
+
 ## Application Components
 
 ## Deployment Process
