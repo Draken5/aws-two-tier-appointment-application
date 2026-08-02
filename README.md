@@ -1,2 +1,21 @@
-# aws-two-tier-appointment-application
-Built and troubleshot a two-tier web application environment on AWS using Linux, MySQL, Flask, and cloud infrastructure concepts.
+# AWS Two-Tier Appointment Application Deployment & Troubleshooting
+
+## Project Overview
+
+## Project Goal
+
+## Architecture
+
+## AWS Services Used
+
+## Application Components
+
+## Deployment Process
+
+## Troubleshooting Challenges
+
+## Security Considerations
+
+## Lessons Learned
+
+## Future Improvements
