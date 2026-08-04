@@ -165,3 +165,58 @@ If I continued developing this project, I would implement Infrastructure as Code
 
 Adding IaC would also improve the repeatability of the project by allowing infrastructure changes to be tracked, documented, and managed through version control.
 
+
+## Screenshots
+
+**Figure 1. *** Architecture Overview of AWS LightSail consisting of Flask application server communicating with a separate My SQL database server
+
+<img width="430" height="642" alt="AWS LightSail Architecture" src="https://github.com/user-attachments/assets/e45eb08b-5f3c-464c-ae2a-473326f5a41c" />
+
+**Figure 2. ** Two AWS LightSail instances configured to support a two-tier application architecture, separating the application and database environments.
+
+<img width="1907" height="793" alt="Application Support Instance" src="https://github.com/user-attachments/assets/9b41036a-bd30-45f3-bd18-bde44c9fff6c" />
+
+<img width="1905" height="798" alt="DB Server Instance" src="https://github.com/user-attachments/assets/026dcf6c-006e-40bb-b687-e69bc3476324" />
+
+**Figure 3. ** Secure administration of the Ubuntu server using SSH during deployment and troubleshooting.
+
+<img width="1286" height="936" alt="Terminal Connecting to the Application Server" src="https://github.com/user-attachments/assets/4a608e8f-9f97-40fb-8b51-99305bd45946" />
+
+**Figure 4. ** Verification that the MySQL service was successfully running after resolving memory-related deployment issues.
+
+<img width="1285" height="945" alt="MySQL Service Running" src="https://github.com/user-attachments/assets/e557e457-08fd-4ea0-ba91-cdaa1031669a" />
+
+**Figure 5. ** Flask application successfully running on the application server and listening for incoming requests.
+
+<img width="1276" height="942" alt="Flask Application Running" src="https://github.com/user-attachments/assets/b6ba65b5-188f-4e19-8bb5-af255a9732dd" />
+
+**Figure 6. ** Successful API validation demonstrating communication between the Flask application and the MySQL database.
+
+<img width="1920" height="945" alt="API Validation" src="https://github.com/user-attachments/assets/91165b5e-bab0-4b30-95e8-31bf847deb22" />
+
+**Figure 7. ** System memory verification after configuring swap space to resolve the MySQL deployment failure caused by insufficient memory resources.
+
+<img width="1269" height="515" alt="Memory Verification free -h" src="https://github.com/user-attachments/assets/9d89ce5f-a590-4797-8953-f8ba347ec682" />
+
+**Figure 8. ** Troubleshooting evidence used during root cause analysis of the MySQL deployment failure.
+
+<img width="1281" height="929" alt="OOM Messages" src="https://github.com/user-attachments/assets/1f16a689-6573-4af7-a02d-4e5a2e41660f" />
+
+Installation Failure
+
+<img width="1286" height="144" alt="Installation Failure" src="https://github.com/user-attachments/assets/16169a85-53d1-48a6-9e05-e57052c5af10" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
